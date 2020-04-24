@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+	<RelativeLayout
+        android:id="@+id/View"
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+	</RelativeLayout>
+	    	
+	<RelativeLayout
+        android:id="@+id/topBanner"
+		android:layout_width="fill_parent"
+		android:layout_height="38dp"
+		android:layout_gravity="center"
+		android:orientation="horizontal" 
+		android:layout_alignParentTop="true"
+		android:visibility="gone">
+	</RelativeLayout>
+
+		<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp" >
+
+        <ImageButton
+            android:id="@+id/Button3x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Button4x4"
+            android:background="@drawable/btn_3x3"
+            android:text="" 
+            android:onClick="saveImage"
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/Button4x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Button3x3"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="6dp"
+            android:onClick="saveImage"
+            android:background="@drawable/btn_4x4"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/Button5x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Button4x4"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/Button4x4"
+            android:background="@drawable/btn_5x5"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Button5x5"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/Button5x5"
+            android:background="@drawable/btn_back"
+            android:text="" />
+        
+
+        </RelativeLayout>
+	
+	
+	<RelativeLayout
+        android:id="@+id/ll_btns"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:layout_gravity="center"
+		android:layout_marginBottom="60dp"
+		android:layout_above="@+id/bottomBanner"
+		android:orientation="horizontal" 
+		android:visibility="gone">
+
+	 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+		android:orientation="vertical" 
+		android:layout_gravity="center"
+		android:layout_centerInParent="true"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:weightSum="1"
+		>
+	     
+        <Button
+            android:id="@+id/Button3x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/button_three"
+            android:textSize="18sp"
+            android:fontFamily="bold"
+            android:visibility="visible" 
+            android:onClick="saveImage"
+            />
+     
+        <Button
+            android:id="@+id/Button4x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/button_four"
+            android:textSize="18sp"
+            android:fontFamily="bold"
+            android:visibility="visible" 
+            android:onClick="saveImage"/>
+        <Button
+            android:id="@+id/Button5x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/button_five"
+            android:textSize="18sp"
+            android:fontFamily="bold"
+            android:visibility="visible" 
+            android:onClick="saveImage"/>
+      
+		</LinearLayout>
+		
+		</RelativeLayout>
+	
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/puzzle_layout_text_text"
+            android:textColor="#FF0000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/save_button"
+            android:visibility="gone" 
+            android:onClick="saveImage"/>
+    </RelativeLayout>
+	
+	<RelativeLayout
+        android:id="@+id/bottomBanner"
+		android:layout_width="fill_parent"
+		android:layout_height="38dp"
+		android:layout_gravity="center"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+		android:visibility="gone" >
+	</RelativeLayout>
+    
+</RelativeLayout>

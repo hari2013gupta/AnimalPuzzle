@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+	<RelativeLayout
+        android:id="@+id/View"
+		android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+	</RelativeLayout>
+	    	
+	<RelativeLayout
+        android:id="@+id/topBanner"
+		android:layout_width="fill_parent"
+		android:layout_height="38dp"
+		android:layout_gravity="center"
+		android:orientation="horizontal" 
+		android:layout_alignParentTop="true"
+		android:visibility="gone">
+	</RelativeLayout>
+
+	<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp" >
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+            android:background="@drawable/btn_play"
+            android:text="Play" 
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_below="@+id/btn_play"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_help"
+            android:layout_marginTop="6dp"
+            android:text="Description" />
+
+        <ImageButton
+            android:id="@+id/btn_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_help"
+            android:layout_marginTop="6dp"
+			android:visibility="gone"
+            android:layout_below="@+id/btn_help"
+            android:background="@drawable/btn_about"
+            android:text="About Us" />
+
+        <ImageButton
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_help"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/btn_help"
+            android:background="@drawable/btn_exit"
+            android:text="Exit" />
+
+        </RelativeLayout>
+	
+	<RelativeLayout
+        android:id="@+id/ll_btns"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:layout_gravity="center"
+		android:layout_marginBottom="60dp"
+		android:layout_above="@+id/bottomBanner"
+		android:orientation="horizontal" 
+		android:visibility="visible">
+
+	 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+		android:orientation="horizontal" 
+		android:layout_gravity="center"
+		android:layout_centerInParent="true"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:weightSum="1"
+		>
+	     
+<!-- 		
+        <Button
+            android:id="@+id/Button3x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/button_three"
+            android:textSize="18sp"
+            android:fontFamily="bold"
+            android:visibility="gone" 
+            android:onClick="saveImage"/>
+     
+        <Button
+            android:id="@+id/Button4x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/button_four"
+            android:textSize="18sp"
+            android:fontFamily="bold"
+            android:visibility="gone" 
+            android:onClick="saveImage"/>
+        <Button
+            android:id="@+id/Button5x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/button_five"
+            android:textSize="18sp"
+            android:fontFamily="bold"
+            android:visibility="gone" 
+            android:onClick="saveImage"/>
+-->      
+		</LinearLayout>
+		
+		</RelativeLayout>
+	
+    
+	<RelativeLayout
+        android:id="@+id/bottomBanner"
+		android:layout_width="fill_parent"
+		android:layout_height="38dp"
+		android:layout_gravity="center"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+		android:visibility="gone" >
+	</RelativeLayout>
+    
+</RelativeLayout>

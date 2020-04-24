@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_se_mainmenus" android:state_pressed="true"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/btn_un_mainmenus"/>
+    <!-- focused -->
+    <item android:drawable="@drawable/btn_un_mainmenus"/>
+    <!-- default -->
+
+</selector>

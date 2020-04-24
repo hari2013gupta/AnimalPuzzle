@@ -1,0 +1,231 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    >
+       <TextView 
+           android:id="@+id/Tv_priv_policy"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:layout_centerHorizontal="true"
+           android:text="Privacy Policy"/>
+       
+       <TextView 
+           android:id="@+id/policyView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Tv_priv_policy"
+           android:textStyle="normal"
+           android:textColor="#ffffff"
+           android:textSize="13dp"
+           android:text=""/>
+       
+       <TextView 
+           android:id="@+id/indroctionView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/policyView"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:text="Introduction"/>
+        <TextView 
+           android:id="@+id/RockinEntertainmentView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/indroctionView"
+           android:textColor="#ffffff"
+           android:textStyle="normal"
+           android:textSize="13dp"
+           />
+       
+        <TextView 
+           android:id="@+id/aboutChildrenView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/RockinEntertainmentView"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:text="A quick word about children"/>
+        
+        <TextView 
+           android:id="@+id/aboutChildrenDeclrationView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/aboutChildrenView"
+           android:textColor="#ffffff"
+           android:textStyle="normal"
+           android:textSize="13dp"
+           />
+        
+         <TextView 
+           android:id="@+id/informationCollectView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/aboutChildrenDeclrationView"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:text="Information we may collect from you"/>
+          
+          <TextView 
+           android:id="@+id/informationCollectDeclrationView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/informationCollectView"
+           android:textColor="#ffffff"
+           android:textStyle="normal"
+           android:textSize="13dp"
+           />
+          
+          <TextView 
+           android:id="@+id/informationUses"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/informationCollectDeclrationView"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:text="Uses made of your information"/>
+          
+          <TextView 
+           android:id="@+id/informationDetailView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/informationUses"
+           android:textColor="#ffffff"
+           android:textStyle="normal"
+           android:textSize="13dp"
+           />
+          
+         <TextView 
+           android:id="@+id/disclouserofYourApp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/informationDetailView"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:text="Disclosure of your information"/>
+         
+          <TextView 
+           android:id="@+id/disclouserDetail"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/disclouserofYourApp"
+           android:textColor="#ffffff"
+           android:textStyle="normal"
+           android:textSize="13dp"
+           />
+           <TextView 
+           android:id="@+id/thirdpartySite"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/disclouserDetail"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:text="Third party sites"/>
+         <TextView 
+           android:id="@+id/thirdpartySiteView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/thirdpartySite"
+           android:textColor="#ffffff"
+           android:textStyle="normal"
+           android:textSize="13dp"
+           />
+         
+           <TextView 
+           android:id="@+id/yourRights"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/thirdpartySiteView"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:text="Your rights"/>
+         
+           <TextView 
+           android:id="@+id/yourrightDetail"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/yourRights"
+           android:textColor="#ffffff"
+           android:textStyle="normal"
+           android:textSize="13dp"
+           />
+           
+            <TextView 
+           android:id="@+id/Datasecurity"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/yourrightDetail"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:text="Data security"/>
+          <TextView 
+           android:id="@+id/DatasecurityDetail"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/Datasecurity"
+           android:textColor="#ffffff"
+           android:textStyle="normal"
+           android:textSize="13dp"
+           />
+            
+         <TextView 
+           android:id="@+id/changepolicy"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/DatasecurityDetail"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:text="Changes to our privacy policy"/>
+         
+         <TextView 
+           android:id="@+id/changepolicyDeatil"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/changepolicy"
+           android:textColor="#ffffff"
+           android:textStyle="normal"
+           android:textSize="13dp"
+           />
+             
+         <TextView 
+           android:id="@+id/contact"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/changepolicyDeatil"
+           android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="16dp"
+           android:text="Contact"/>
+         
+          <TextView 
+           android:id="@+id/contactDeatil"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/contact"
+           android:textColor="#ffffff"
+           android:textStyle="normal"
+           android:textSize="13dp"
+           />
+</RelativeLayout>
+</ScrollView>
