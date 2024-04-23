@@ -23,7 +23,7 @@ import com.hari.animalpuzzle.R;
 public class ModeActivity extends Activity {
 	
     ImageButton _Button3,_Button4,_Button5,_btn_back;
-	String getURL,URL,bottomURL;View topAdd,bottomAdd;Handler handler;
+//	String getURL,URL,bottomURL;View topAdd,bottomAdd;Handler handler;
 	final int []imageAddArray={R.drawable.banner_ucweb,R.drawable.banner_olx,R.drawable.banner_freeapps,R.drawable.banner_topandroid,R.drawable.banner_dealslelo,R.drawable.banner_flipcart};
 	final int []imageBottomArray={R.drawable.banner_freeapps,R.drawable.banner_topandroid,R.drawable.banner_dealslelo,R.drawable.banner_olx,R.drawable.banner_flipcart,R.drawable.banner_ucweb};
 
@@ -38,71 +38,71 @@ public class ModeActivity extends Activity {
 ///////////////////hari_banner
         
 //----------------------hhari-----------
-topAdd=(View)findViewById(R.id.topBanner);
-
-bottomAdd=(View)findViewById(R.id.bottomBanner);
-
-		handler = new Handler();
-		
-       Runnable runnable = new Runnable() {
-         int j=0;
-         public void run() {
-      	   topAdd.setBackgroundResource(imageAddArray[j]);
-             bottomAdd.setBackgroundResource(imageBottomArray[j]);
-           	if(j==0){
-          		URL="https://play.google.com/store/apps/details?id=com.UCMobile.intl&referrer=utm_source%3Dtnj%2540hariom-CASH";
-          		bottomURL="http://freeappstore.in/";
-          	}else if(j==1){
-          		URL="http://hasoffers.ymtrack.com/aff_c?offer_id=12422&aff_id=14788";
-          		bottomURL="http://appmyfriend.com/";
-          	}else if(j==2){
-          		URL="http://freeappstore.in/";
-          		bottomURL="http://www.dealslelo.com/";
-          	}else if(j==3){
-          		URL="http://appmyfriend.com/";
-          		bottomURL="http://hasoffers.ymtrack.com/aff_c?offer_id=12422&aff_id=14788";
-      		}else if(j==4){
-      			URL="http://www.dealslelo.com/";
-      			bottomURL="http://yeahmobi.go2cloud.org/aff_c?offer_id=15692&aff_id=14788";
-      			
-      		}else if(j==5){
-      			URL="http://yeahmobi.go2cloud.org/aff_c?offer_id=15692&aff_id=14788";
-            		bottomURL="https://play.google.com/store/apps/details?id=com.UCMobile.intl&referrer=utm_source%3Dtnj%2540hariom-CASH";
-           	}
-          	j++;
-          	if(j>imageBottomArray.length-1){
-          	
-          		j=0;
-          	}
-              handler.postDelayed(this, 6000);  //for interval...
-          	System.out.println("--------j----//"+j);
-          }
-      };	            	
-      handler.postDelayed(runnable, 500); //for initial delay..
-//_________harisep
-      
-      topAdd.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-
-				Context context=v.getContext();
-      		Intent thingyToInstall=new Intent(Intent.ACTION_VIEW);
-      		thingyToInstall.setDataAndType(Uri.parse(URL), null);
-      		context.startActivity(thingyToInstall);
-			}
-		});
-      
-    bottomAdd.setOnClickListener(new OnClickListener() {
-		
-		@Override
-		public void onClick(View v) {
-			Context context=v.getContext();
-   		Intent thingyToInstall=new Intent(Intent.ACTION_VIEW);
-   		thingyToInstall.setDataAndType(Uri.parse(bottomURL), null);
-   		context.startActivity(thingyToInstall);
-		}
-	});
+//topAdd=(View)findViewById(R.id.topBanner);
+//
+//bottomAdd=(View)findViewById(R.id.bottomBanner);
+//
+//		handler = new Handler();
+//
+//       Runnable runnable = new Runnable() {
+//         int j=0;
+//         public void run() {
+//      	   topAdd.setBackgroundResource(imageAddArray[j]);
+//             bottomAdd.setBackgroundResource(imageBottomArray[j]);
+//           	if(j==0){
+//          		URL="https://play.google.com/store/apps/details?id=com.UCMobile.intl&referrer=utm_source%3Dtnj%2540hariom-CASH";
+//          		bottomURL="http://freeappstore.in/";
+//          	}else if(j==1){
+//          		URL="http://hasoffers.ymtrack.com/aff_c?offer_id=12422&aff_id=14788";
+//          		bottomURL="http://appmyfriend.com/";
+//          	}else if(j==2){
+//          		URL="http://freeappstore.in/";
+//          		bottomURL="http://www.dealslelo.com/";
+//          	}else if(j==3){
+//          		URL="http://appmyfriend.com/";
+//          		bottomURL="http://hasoffers.ymtrack.com/aff_c?offer_id=12422&aff_id=14788";
+//      		}else if(j==4){
+//      			URL="http://www.dealslelo.com/";
+//      			bottomURL="http://yeahmobi.go2cloud.org/aff_c?offer_id=15692&aff_id=14788";
+//
+//      		}else if(j==5){
+//      			URL="http://yeahmobi.go2cloud.org/aff_c?offer_id=15692&aff_id=14788";
+//            		bottomURL="https://play.google.com/store/apps/details?id=com.UCMobile.intl&referrer=utm_source%3Dtnj%2540hariom-CASH";
+//           	}
+//          	j++;
+//          	if(j>imageBottomArray.length-1){
+//
+//          		j=0;
+//          	}
+//              handler.postDelayed(this, 6000);  //for interval...
+//          	System.out.println("--------j----//"+j);
+//          }
+//      };
+//      handler.postDelayed(runnable, 500); //for initial delay..
+////_________harisep
+//
+//      topAdd.setOnClickListener(new OnClickListener() {
+//
+//			@Override
+//			public void onClick(View v) {
+//
+//				Context context=v.getContext();
+//      		Intent thingyToInstall=new Intent(Intent.ACTION_VIEW);
+//      		thingyToInstall.setDataAndType(Uri.parse(URL), null);
+//      		context.startActivity(thingyToInstall);
+//			}
+//		});
+//
+//    bottomAdd.setOnClickListener(new OnClickListener() {
+//
+//		@Override
+//		public void onClick(View v) {
+//			Context context=v.getContext();
+//   		Intent thingyToInstall=new Intent(Intent.ACTION_VIEW);
+//   		thingyToInstall.setDataAndType(Uri.parse(bottomURL), null);
+//   		context.startActivity(thingyToInstall);
+//		}
+//	});
 //  	----------------------hhari-----------
   	        //for initial delay..
 
