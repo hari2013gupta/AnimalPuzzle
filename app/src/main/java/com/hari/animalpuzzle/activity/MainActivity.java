@@ -251,10 +251,10 @@ public class MainActivity extends Activity {
         if (backButtonCount > 0) {
             super.onBackPressed();
 //			     overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
-//            Intent intent = new Intent(Intent.ACTION_MAIN);
-//            intent.addCategory(Intent.CATEGORY_HOME);
-//            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//            startActivity(intent);
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         } else {
             backButtonCount++;
             Toast.makeText(this, "Press again to exit.", Toast.LENGTH_SHORT).show();
